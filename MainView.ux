@@ -1,5 +1,5 @@
 <App Theme="Basic">
-	<JavaScript File="js-build/index.js" />
+	<JavaScript File="js-build/app.js" />
 	<Panel>
 		<Text Alignment="Center" Value="{message}" />
 	</Panel>

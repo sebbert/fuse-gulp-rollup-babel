@@ -12,13 +12,9 @@ This is an example of how you can integrate [Gulp](http://gulpjs.com/), [Rollup]
 ## Using it
 
 Run `gulp watch` to watch for changes to files in the `js` folder.
-When a change occurs, rollup and babel will run, and your transpiled, concatenated JS file will end up as `js-build/index.js`. This will in turn trigger an update in the Fuse preview simulator.
+When a change occurs, rollup and babel will run, and your transpiled, concatenated JS file will end up as `js-build/app.js`. This will in turn trigger an update in the Fuse preview simulator.
 
-You may also change the name of the entry and output file by editing the following line in [Gulpfile.js](Gulpfile.js):
-
-```
-const Entry = "js/index.js";
-```
+The entry point is `js/app.js`, which means that only this file will be able to export objects to fuse.
 
 ## License
 
