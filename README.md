@@ -1,6 +1,6 @@
-# 💫 fuse-gulp-babel
+# 💫 fuse-gulp-rollup-babel
 
-An example of how you can integrate [Gulp](https://github.com/gulpjs/gulp) and [Babel](https://github.com/babel/babel) into your [Fuse](https://www.fusetools.com/) workflow, allowing you to use ES6 features (and more!) in your Fuse app.
+This is an example of how you can integrate [Gulp](http://gulpjs.com/), [Rollup](http://rollupjs.org/) and [Babel](https://babeljs.io/) into your [Fuse](https://www.fusetools.com/) workflow, allowing you to use ES2015 features (and more!) in your Fuse app.
 
 ## Prerequisites
 
@@ -11,9 +11,14 @@ An example of how you can integrate [Gulp](https://github.com/gulpjs/gulp) and [
 
 ## Using it
 
-Run `gulp watch` to watch for changes to the `js` folder. When a change occurs, babel will run, and your resulting ES5 files will appear in the `js-build` folder.
+Run `gulp watch` to watch for changes to files in the `js` folder.
+When a change occurs, rollup and babel will run, and your transpiled, concatenated JS file will end up as `js-build/index.js`. This will in turn trigger the change in the Fuse preview simulator.
 
-_Note:_ In your UX, you need to import your javascript files from the `js-build` folder, not the `js` folder.
+You may also change the name of the entry and output file by editing the following line in [Gulpfile.js](Gulpfile.js):
+
+```
+const Entry = "js/index.js";
+```
 
 ## License
 
