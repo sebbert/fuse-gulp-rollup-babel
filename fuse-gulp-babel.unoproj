@@ -26,5 +26,8 @@
   ],
   "Includes": [
     "*"
+  ],
+  "Excludes": [
+    "js/"
   ]
 }
