@@ -26,4 +26,4 @@ gulp.task("default", () => {
 	.pipe(gulp.dest("js-build"))
 });
 
-gulp.task("watch", () => gulp.watch("js/**/*.js", ['default']));
+gulp.task("watch", () => gulp.watch(["js/", "js/**/*.js"], ['default']));
